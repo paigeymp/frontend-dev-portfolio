@@ -2,6 +2,8 @@
   --primary-color: #c3d345;
   --secondary-color: #f9e093;
   --accent-color: #dbdbdb;
+  --border-radius: 30px;
+  --box-shadow: 0 5px 10px rgba(125, 126, 95, var(--accent-color));
 }
 
 body {
@@ -31,6 +33,52 @@ h2 {
   margin-bottom: 10px;
 }
 
+.slideshow {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.slide-img {
+  flex: 1;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  max-width: 300px;
+  height: 300px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navigation-links a:hover {
+  color: var(--accent-color);
+}
+
+.about-link,
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.portfolio-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
 @media (max-width: 700px) {
   h1 {
     font-size: 40px;
@@ -42,5 +90,9 @@ h2 {
 
   .profile-photo {
     width: 100px;
+  }
+
+  .slideshow {
+    display: none;
   }
 }
