@@ -79,6 +79,17 @@ h2 {
   border: 1px solid var(--primary-color);
 }
 
+.contact-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-social {
+  font-size: 18px;
+  margin: 10px;
+  color: var(--secondary-color);
+}
+
 @media (max-width: 700px) {
   h1 {
     font-size: 40px;
