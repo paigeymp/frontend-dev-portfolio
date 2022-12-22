@@ -2,30 +2,40 @@
   --primary-color: #c3d345;
   --secondary-color: #f9e093;
   --accent-color: #dbdbdb;
+  --primary-font: "Poppins", cursive;
+  --secondary-font: "Quicksand", cursive;
   --border-radius: 30px;
   --box-shadow: 0 5px 10px rgba(125, 126, 95, var(--accent-color));
 }
 
 body {
   margin-top: 150px;
-  background-color: black;
+  background-color: #100e19;
 }
 
 h1 {
   color: var(--primary-color);
-  font-size: 96px;
-  font-family: "quicksand", cursive;
+  font-size: 90px;
+  font-family: var(--primary-font);
   font-weight: bold;
 }
 
 h2 {
   color: var(--secondary-color);
-  font-size: 48px;
-  font-family: "indie flower", cursive;
+  font-size: 36px;
+  font-family: var(--secondary-font);
+  margin-top: 20px;
+}
+
+.hero {
+  text-align: center;
+  font-weight: normal;
+  padding: 0 45px;
 }
 
 .profile-photo {
   width: 250px;
+  border: 2px solid var(--accent-color);
 }
 
 .header {
@@ -58,7 +68,6 @@ h2 {
 .navigation-links {
   display: flex;
   margin-top: 40px;
-
   justify-content: center;
 }
 
@@ -102,15 +111,22 @@ h2 {
 
 @media (max-width: 700px) {
   h1 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   h2 {
     font-size: 20px;
   }
 
+  .header {
+    display: block;
+    margin: 10px auto;
+  }
+
   .profile-photo {
-    width: 100px;
+    width: 150px;
+    display: block;
+    margin: 10px auto;
   }
 
   .slideshow {
