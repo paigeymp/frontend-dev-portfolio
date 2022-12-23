@@ -4,8 +4,7 @@
   --accent-color: #dbdbdb;
   --primary-font: "Poppins", cursive;
   --secondary-font: "Quicksand", cursive;
-  --border-radius: 30px;
-  --box-shadow: 0 5px 10px rgba(125, 126, 95, var(--accent-color));
+  --background-color: rgb(0, 0, 0, 0.1);
 }
 
 body {
@@ -18,6 +17,7 @@ h1 {
   font-size: 90px;
   font-family: var(--primary-font);
   font-weight: bold;
+  line-height: 1.2;
 }
 
 h2 {
@@ -27,10 +27,17 @@ h2 {
   margin-top: 20px;
 }
 
+p {
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--accent-color);
+  line-height: 30px;
+}
+
 .hero {
   text-align: center;
-  font-weight: normal;
-  padding: 0 45px;
+  padding: 80px;
+  background-color: var(--background-color);
 }
 
 .profile-photo {
@@ -43,28 +50,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-.slideshow {
-  display: flex;
-  justify-content: center;
-  margin: 30px;
-}
-
-.slide-img {
-  flex: 1;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  max-width: 300px;
-  height: 300px;
-  padding: 20px;
-  box-shadow: var(--box-shadow);
-}
-
-.slide-img:hover {
-  filter: brightness(120%);
-  max-width: 310px;
-  height: 310px;
-}
-
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -74,7 +59,7 @@ h2 {
 .navigation-links a {
   flex: 1;
   text-align: center;
-  max-width: 100px;
+  max-width: 120px;
   margin: 10px;
   border-radius: 4px;
   padding: 20px 15px;
@@ -109,7 +94,47 @@ h2 {
   color: var(--secondary-color);
 }
 
-@media (max-width: 700px) {
+.icon-social:hover {
+  color: var(--primary-color);
+}
+
+.btn-branding-outline {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding-outline:hover {
+  color: var(--accent-color);
+  border: 1px solid var(--primary-color);
+}
+
+.image {
+  background-color: var(--background-color);
+  width: 500px;
+  height: 450px;
+}
+
+.weather-app-image {
+  padding: 45px 0 0 45px;
+}
+
+.clock-app-image {
+  padding: 0 45px 0 0;
+}
+
+.croissant-app-image {
+  padding: 0 0 45px 45px;
+}
+
+.project-description {
+  padding: 120px 60px;
+}
+
+@media (max-width: 900px) {
   h1 {
     font-size: 36px;
   }
@@ -123,13 +148,18 @@ h2 {
     margin: 10px auto;
   }
 
+  .hero {
+    padding: 80px 20px;
+  }
+
   .profile-photo {
     width: 150px;
     display: block;
     margin: 10px auto;
   }
 
-  .slideshow {
-    display: none;
+  .project-description {
+    padding: 0;
+    text-align: center;
   }
 }
