@@ -22,7 +22,7 @@ h1 {
 
 h2 {
   color: var(--secondary-color);
-  font-size: 36px;
+  font-size: 40px;
   font-family: var(--secondary-font);
   margin-top: 20px;
 }
@@ -98,6 +98,28 @@ p {
   color: var(--primary-color);
 }
 
+.about-hero {
+  padding: 160px 20px;
+}
+
+.about-hero h1 {
+  font-weight: 44px;
+  line-height: 80px;
+}
+
+.about-hero h2 {
+  font-size: 18px;
+  font-family: var(--primary-font);
+}
+
+.about-hero-content {
+  margin: 30px;
+}
+
+.about-hero-photo {
+  border: 2px solid var(--accent-color);
+}
+
 .btn-branding-outline {
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
@@ -150,6 +172,15 @@ p {
 
   .hero {
     padding: 80px 20px;
+  }
+
+  .about-hero {
+    text-align: center;
+    padding: 0;
+  }
+
+  .about-hero-photo {
+    width: 60%;
   }
 
   .profile-photo {
